@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddov07vsugm24"]
+
+[ext_resource type="Script" uid="uid://2amffxn4bh8b" path="res://PixelBoss.cs" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://btajoj0b4kfcs" path="res://120px-Mina_Crown.webp" id="2_0e48y"]
+
+[node name="PixelBoss" type="Node2D"]
+script = ExtResource("1_wtcfe")
+colSheet = Array[Color]([Color(1, 0, 0, 0), Color(0, 0, 0, 1), Color(0.52906674, 0.5290667, 0.5290667, 1), Color(0.2, 0.7490196, 0.8235294, 0.6313726), Color(1, 0, 0, 0.6313726)])
+
+[node name="120PxMinaCrown" type="Sprite2D" parent="."]
+z_index = 15
+texture_filter = 1
+position = Vector2(85, 279)
+scale = Vector2(0.141, 0.141)
+texture = ExtResource("2_0e48y")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(240, 210)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 8.0
+offset_top = 84.0
+offset_right = 48.0
+offset_bottom = 107.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+text = "1
+"
